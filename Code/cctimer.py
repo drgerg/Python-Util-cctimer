@@ -38,17 +38,17 @@ def timer(duration, dotNum, threadStop): ## this function can be used as part of
     logging.info("Variable 'duration' == " + str(duration) + "; Variable 'dur' == " + str(dur))
     logging.debug("Main() started with a parameter of : " + str(dur) + ", threadStop = " + str(threadStop))
     while time.time() - starttime < dur and threadStop == False:
-        print('The boolean for threadstop is: ' + str(threadStop) + '\n')
+        print('The boolean for threadstop is: \033[1;32m' + str(threadStop) + '\033[0;0m\n')
         for i in range(dur):
             if dotNum == "N":
-                print("\033[F" + str(dur-i) + "     ")
+                print("\033[F\033[1;34m" + str(dur-i) + "     ")
             else:
-                print("\033[F\033[K" + "." * (i+1))
+                print("\033[F\033[K\033[1;31m" + "." * (i+1))
             time.sleep(1)
     else:
         timerReturn = "done"
         threadStop = True
-        print('The boolean for threadstop is: ' + str(threadStop))
+        print('\033[0;0mThe boolean for threadstop is: \033[1;31m' + str(threadStop) + "\033[0;0m")
         logger.info("The timer returned: " + timerReturn + ". ThreadStop is " + str(threadStop))
         return timerReturn, threadStop
 #
