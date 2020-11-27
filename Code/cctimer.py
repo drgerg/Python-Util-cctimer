@@ -31,7 +31,7 @@ import time, os, logging
 ## BETWEEN HERE AND 'BELOW HERE' are the 'def'ined functions that can be run
 ##  when you import cctimer as a module in another program. In this .py file, there is only one.
 #
-def timer(duration, dotNum, threadStop): ## this function can be used in a threaded functions as part of a  
+def timer(duration, dotNum, threadStop): ## this function can be used in a threaded function as part of a  
     logger = logging.getLogger(__name__) ## while loop to stop the loop and exit the thread.
     starttime = time.time()
     dur = duration
