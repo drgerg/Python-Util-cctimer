@@ -1,0 +1,4 @@
+Fri, 27 Nov 2020 11:17:44 - Variable 'duration' == 0; Variable 'dur' == 0.
+Fri, 27 Nov 2020 11:17:44 - The timer returned: done. ThreadStop is True.
+Fri, 27 Nov 2020 11:17:56 - Variable 'duration' == 5; Variable 'dur' == 5.
+Fri, 27 Nov 2020 11:18:01 - The timer returned: done. ThreadStop is True.
